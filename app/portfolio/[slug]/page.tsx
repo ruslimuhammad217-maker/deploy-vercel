@@ -4,7 +4,7 @@ import { projects } from '@/data/projects'
 import ProjectDetail from '@/components/ProjectDetail'
 
 interface PageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
@@ -14,7 +14,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const project = projects.find((p) => p.slug === params.slug)
+  const { slug } = await params
+  const project = projects.find((p) => p.slug === slug)
   if (!project) return { title: 'Project Not Found' }
 
   return {
@@ -28,12 +29,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default function ProjectPage({ params }: PageProps) {
-  const project = projects.find((p) => p.slug === params.slug)
+export default async function ProjectPage({ params }: PageProps) {
+  const { slug } = await params
+  const project = projects.find((p) => p.slug === slug)
 
   if (!project) notFound()
 
-  const otherProjects = projects.filter((p) => p.slug !== params.slug).slice(0, 2)
+  const otherProjects = projects.filter((p) => p.slug !== slug).slice(0, 2)
 
   return <ProjectDetail project={project!} otherProjects={otherProjects} />
 }
