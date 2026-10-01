@@ -85,20 +85,18 @@ export default function Hero() {
                 className="text-hero leading-none"
                 variants={itemVariants}
               >
-                ARYA
+                MUHAMMAD
               </motion.h1>
               <motion.div variants={itemVariants} className="flex items-end gap-4 flex-wrap">
-                <h1 className="text-hero leading-none text-outline">
-                  PRATAMA
-                </h1>
+                <h3 className="text-hero leading-none text-outline">
+                  RUSLI
+                </h3>
                 <div className="hidden md:block mb-4">
                   <div
                     className="px-3 py-1 border"
                     style={{ borderColor: 'var(--accent)', color: 'var(--accent)' }}
                   >
-                    <span className="font-inter text-xs font-bold tracking-widest uppercase">
-                      ✦ Available
-                    </span>
+
                   </div>
                 </div>
               </motion.div>
@@ -154,7 +152,7 @@ export default function Hero() {
                   >
                     <span>View Portfolio</span>
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </button>
 
