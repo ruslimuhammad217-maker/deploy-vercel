@@ -11,6 +11,7 @@ const typeLabels: Record<ExperienceType['type'], string> = {
   internship: 'Internship',
   organization: 'Organization',
   freelance: 'Freelance',
+  event: 'Event',
 }
 
 const fadeUpVariants = {
