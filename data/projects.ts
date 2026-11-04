@@ -139,7 +139,7 @@ export const projects: Project[] = [
       '/images/project/ui3.png',
     ],
     tags: ['UI Design', 'UX Research', 'Mobile App', 'Figma'],
-    featured: true,
+    featured: false,
     color: '#2D4A3E',
   },
   {
@@ -210,7 +210,7 @@ export const projects: Project[] = [
 
     ],
     tags: ['Promo Video', 'Premiere Pro'],
-    featured: true,
+    featured: false,
     color: '#1D3557',
     instagramUrl: 'https://www.instagram.com/reel/DWGmIMHkRnj/',
   },
