@@ -93,7 +93,7 @@ export default function About() {
               </p>
               <p className="font-body text-base leading-relaxed" style={{ color: 'var(--muted)' }}>
                 Dengan latar belakang Teknik Informatika dan pengalaman nyata dalam
-                social media design, UI/UX, motion graphics, video editing, dan 3D art — saya membawa
+                social media design, UI/UX, motion graphics, serta video editing — saya membawa
                 perspektif yang unik di persimpangan antara teknologi dan seni.
               </p>
             </motion.div>

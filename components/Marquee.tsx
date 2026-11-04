@@ -12,7 +12,7 @@ const marqueeItems = [
   'Motion Design',
   'Brand Strategy',
   'Typography',
-  '3D Design',
+  'Video Editing',
   'Creative Direction',
   'Illustration',
 ]

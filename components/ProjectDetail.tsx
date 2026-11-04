@@ -24,6 +24,16 @@ const fadeUp = {
   }),
 }
 
+function getInstagramEmbedUrl(url: string): string {
+  const match = url.match(/instagram\.com\/(?:[a-zA-Z0-9_.]+\/)?(reel|p|tv)\/([^/?#&]+)/i)
+  if (match) {
+    const type = match[1].toLowerCase()
+    const code = match[2]
+    return `https://www.instagram.com/${type}/${code}/embed/`
+  }
+  return url.endsWith('/') ? `${url}embed/` : `${url}/embed/`
+}
+
 export default function ProjectDetail({ project, otherProjects }: ProjectDetailProps) {
   const router = useRouter()
 
@@ -133,7 +143,7 @@ export default function ProjectDetail({ project, otherProjects }: ProjectDetailP
         >
           <div className="container-main">
             {/* Overview Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-16">
               {/* Left — Project Info */}
               <motion.div
                 className="lg:col-span-4"
@@ -161,6 +171,25 @@ export default function ProjectDetail({ project, otherProjects }: ProjectDetailP
                       </span>
                     </div>
                   ))}
+
+                  {project.instagramUrl && (
+                    <div
+                      className="pb-6"
+                      style={{ borderBottom: '1px solid var(--border)' }}
+                    >
+                      <span className="text-label block mb-2">Instagram Post</span>
+                      <a
+                        href={project.instagramUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 font-display font-bold text-sm uppercase tracking-tight transition-opacity hover:opacity-80"
+                        style={{ color: 'var(--accent)' }}
+                      >
+                        <span>View Reel / Post</span>
+                        <ArrowUpRight size={14} />
+                      </a>
+                    </div>
+                  )}
 
                   <div>
                     <span className="text-label block mb-3">Tags</span>
@@ -195,9 +224,82 @@ export default function ProjectDetail({ project, otherProjects }: ProjectDetailP
                 <p className="font-body text-xl leading-relaxed mb-8" style={{ color: 'var(--foreground)' }}>
                   {project.fullDescription}
                 </p>
-
               </motion.div>
             </div>
+
+            {/* Instagram Video / Reel Embed */}
+            {project.instagramUrl && (
+              <motion.div
+                className="mb-16"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-8 h-px" style={{ backgroundColor: 'var(--accent)' }} />
+                  <span className="text-label">Video Showcase</span>
+                </div>
+
+                <div
+                  className="w-full max-w-2xl mx-auto rounded-2xl border p-4 sm:p-6 shadow-xl"
+                  style={{
+                    backgroundColor: 'rgba(255, 255, 255, 0.02)',
+                    borderColor: 'var(--border)',
+                  }}
+                >
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4" style={{ borderBottom: '1px solid var(--border)' }}>
+                    <div className="flex items-center gap-3">
+                      <div
+                        className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
+                        style={{
+                          background: 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)',
+                        }}
+                      >
+                        <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="font-display font-bold text-sm uppercase tracking-wide" style={{ color: 'var(--foreground)' }}>
+                          Instagram Reel
+                        </h3>
+                        <span className="font-body text-xs" style={{ color: 'var(--muted)' }}>
+                          Tonton video langsung di bawah atau buka di Instagram
+                        </span>
+                      </div>
+                    </div>
+
+                    <a
+                      href={project.instagramUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 font-inter text-xs font-semibold uppercase tracking-wider px-4 py-2 border rounded-full transition-all duration-300 hover:scale-105"
+                      style={{
+                        borderColor: 'var(--border)',
+                        color: 'var(--foreground)',
+                        backgroundColor: 'rgba(255,255,255,0.05)',
+                      }}
+                    >
+                      <span>Open on Instagram</span>
+                      <ArrowUpRight size={14} />
+                    </a>
+                  </div>
+
+                  <div className="flex justify-center w-full overflow-hidden rounded-xl bg-black/40">
+                    <iframe
+                      src={getInstagramEmbedUrl(project.instagramUrl)}
+                      className="w-full max-w-[480px] h-[580px] sm:h-[640px] border-0 rounded-xl"
+                      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                      allowFullScreen
+                      scrolling="no"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+            )}
 
             {/* Images Gallery */}
             <div className="flex flex-col gap-6">

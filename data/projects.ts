@@ -15,12 +15,13 @@ export interface Project {
   tags: string[]
   featured: boolean
   color?: string
+  instagramUrl?: string
 }
 
 export type ProjectCategory =
   | 'Social Media'
   | 'UI/UX'
-  | '3D'
+  | 'Video'
 
 export const projects: Project[] = [
   // ── Social Media ──────────────────────────────────────────
@@ -119,150 +120,104 @@ export const projects: Project[] = [
   },
   // ── UI/UX ──────────────────────────────────────────────────
   {
-    id: '4',
+    id: '5',
     slug: 'archi-app-ui',
-    title: 'Archi App UI',
+    title: 'Smart Career',
     category: 'UI/UX',
-    year: '2026',
-    client: 'Archi Platform',
+    year: '2025',
+    client: 'Academic',
     role: 'UI/UX Designer',
     shortDescription: 'Mobile app interface for an architecture platform',
     fullDescription:
-      'UI/UX design for a mobile application connecting architects with clients. The app features project galleries, real-time messaging, and portfolio presentation tools.',
+      'Smart Career merupakan aplikasi pengembangan karier yang dirancang untuk membantu pengguna menemukan peluang pekerjaan sesuai dengan kompetensi, keterampilan, dan kemampuan yang dimiliki. Aplikasi ini menyediakan fitur rekomendasi pekerjaan yang disesuaikan dengan profil pengguna, informasi lowongan pekerjaan, serta tips dan trik dalam menghadapi proses wawancara kerja (interview). Melalui berbagai fitur tersebut, Smart Career bertujuan mempermudah pengguna dalam merencanakan perjalanan karier, menemukan pekerjaan yang sesuai, serta meningkatkan kesiapan dan kepercayaan diri dalam menghadapi dunia kerja.',
     challenge:
       'Designing a complex information architecture that still felt clean and intuitive for both professional architects and non-technical clients.',
     solution:
       'Used a structured editorial layout inspired by architecture magazines, with clear hierarchy, generous whitespace, and a neutral palette that lets project photography take center stage.',
-    coverImage: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=800&q=85',
+    coverImage: '/images/project/cu2.png',
     images: [
-      'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=1200&q=85',
-      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=85',
+      '/images/project/ui3.png',
     ],
     tags: ['UI Design', 'UX Research', 'Mobile App', 'Figma'],
     featured: true,
     color: '#2D4A3E',
   },
   {
-    id: '5',
+    id: '6',
     slug: 'holo-ui-dashboard',
-    title: 'Holo Dashboard UI',
+    title: 'Bridge for Justice ',
     category: 'UI/UX',
-    year: '2025',
-    client: 'Holo Analytics',
-    role: 'UI Designer',
+    year: '2024',
+    client: 'Academic',
+    role: 'UI/UX Designer',
     shortDescription: 'Data visualization dashboard for analytics platform',
     fullDescription:
-      'UI design for a complex data analytics dashboard. The challenge was presenting dense, multi-layered data in a digestible, visually engaging way.',
+      'Bridge for Justice merupakan aplikasi yang dirancang sebagai platform pengaduan dan komunikasi masyarakat untuk membantu melaporkan berbagai tindak kejahatan atau tindakan mencurigakan yang terjadi di lingkungan sekitar. Aplikasi ini menyediakan fitur pelaporan yang memungkinkan pengguna menyampaikan informasi terkait kejadian, serta forum diskusi sebagai wadah untuk berbagi informasi, bertukar pendapat, dan meningkatkan kesadaran masyarakat terhadap keamanan lingkungan. Melalui platform ini, Bridge for Justice bertujuan mendorong partisipasi aktif masyarakat dalam menciptakan lingkungan yang lebih aman, peduli, dan responsif terhadap permasalahan sosial.',
     challenge:
       'Making data-heavy interfaces feel approachable and visually interesting without sacrificing clarity or performance.',
     solution:
       'Applied data visualization best practices with a dark interface that uses color strategically — only to encode data meaning, never decoratively.',
-    coverImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=85',
+    coverImage: '/images/project/cu3.png',
     images: [
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=85',
+      '/images/project/ui1.png',
     ],
     tags: ['Dashboard', 'Data Viz', 'UI Design', 'Dark Mode'],
     featured: false,
     color: '#0D1B2A',
   },
   {
-    id: '6',
+    id: '7',
     slug: 'ecommerce-app-ui',
-    title: 'E-Commerce App UI',
+    title: 'NearFuel',
     category: 'UI/UX',
     year: '2024',
     client: 'ShopEase',
     role: 'UI/UX Designer',
     shortDescription: 'Clean and modern mobile e-commerce shopping experience',
     fullDescription:
-      'Full UI/UX design for a mobile e-commerce app, covering onboarding, product discovery, cart flow, and checkout. The focus was on reducing friction and increasing conversion.',
+      'NearFuel merupakan aplikasi berbasis lokasi yang dirancang untuk membantu pengguna menemukan persebaran Stasiun Pengisian Bahan Bakar Umum (SPBU) dan Stasiun Pengisian Kendaraan Listrik Umum (SPKLU) terdekat. Aplikasi ini menyediakan informasi detail mengenai setiap stasiun, seperti lokasi, fasilitas, dan informasi pendukung lainnya. Selain itu, pengguna dapat memberikan penilaian dan ulasan terhadap SPBU maupun SPKLU yang telah dikunjungi. Melalui fitur tersebut, NearFuel bertujuan memudahkan pengguna dalam menemukan fasilitas pengisian energi, memperoleh informasi yang relevan, serta membantu pengguna lain menentukan pilihan berdasarkan pengalaman dan penilaian masyarakat.',
     challenge:
       'Simplifying a complex purchase funnel without removing essential steps, while keeping the interface visually engaging to encourage browsing.',
     solution:
       'Redesigned the navigation to use a bottom-sheet exploration pattern, introduced a persistent mini-cart, and streamlined checkout to 3 steps with inline validation.',
-    coverImage: 'https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=800&q=85',
+    coverImage: '/images/project/cu1.png',
     images: [
-      'https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=1200&q=85',
+      '/images/project/ui2.png',
     ],
     tags: ['E-Commerce', 'Mobile UI', 'UX Design', 'Prototyping'],
     featured: false,
     color: '#1A237E',
   },
-  // ── 3D ────────────────────────────────────────────────────
+  // ── Video ─────────────────────────────────────────────────
+
   {
-    id: '7',
-    slug: 'terrain-3d-art',
-    title: 'Terrain 3D Series',
-    category: '3D',
-    year: '2025',
-    client: 'Personal Project',
-    role: 'Art Director & 3D Artist',
-    shortDescription: 'Abstract 3D art series exploring natural forms',
+    id: '10',
+    slug: 'pmb-pcr-promotional-video',
+    title: 'PMB PCR Ramadhan Video',
+    category: 'Video',
+    year: '2026',
+    client: 'Politeknik Caltex Riau',
+    role: 'Video Editor & Motion Graphics',
+    shortDescription: 'Institutional promotional video highlighting campus facilities and admission programs',
     fullDescription:
-      'A personal exploration series using Blender to create abstract terrain-like compositions. Each piece combines organic forms with geometric precision.',
+      '**Video PMB Edisi Ramadan Politeknik Caltex Riau** merupakan konten kreatif yang diproduksi dalam rangka menyambut dan memperingati bulan suci Ramadan sekaligus menjadi media promosi Penerimaan Mahasiswa Baru (PMB) Politeknik Caltex Riau. Video ini menggabungkan nuansa Ramadan dengan penyampaian informasi dan promosi kampus melalui konsep visual yang menarik dan komunikatif. Konten ini bertujuan meningkatkan interaksi dengan audiens di media sosial, memperkuat citra positif kampus, serta memperkenalkan Politeknik Caltex Riau kepada calon mahasiswa dengan pendekatan yang lebih kreatif dan relevan.',
     challenge:
-      'Finding the balance between technical 3D work and artistic expression without the visuals feeling cold or mechanical.',
+      'Menyajikan informasi institusional dan teknis yang padat agar tetap menarik ditonton hingga akhir tanpa terkesan monoton atau kaku.',
     solution:
-      'Developed a workflow using procedural textures and hand-sculpted details, paired with warm cinematic lighting to give each piece a tactile, almost photographic quality.',
-    coverImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&q=85',
+      'Mengintegrasikan infografis animasi (motion graphics) di atas footage nyata, pacing video yang dinamis dengan pemilihan musik latar yang inspiratif dan bersemangat, serta transisi scene yang mulus.',
+    coverImage: '/images/project/c3.png',
     images: [
-      'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&q=85',
-      'https://images.unsplash.com/photo-1614729939124-032d1e6c9945?w=1200&q=85',
+
     ],
-    tags: ['Blender', '3D Art', 'Digital Art', 'Abstract'],
+    tags: ['Promo Video', 'Premiere Pro'],
     featured: true,
-    color: '#3A2A5E',
-  },
-  {
-    id: '8',
-    slug: 'neon-city-3d',
-    title: 'Neon City 3D',
-    category: '3D',
-    year: '2025',
-    client: 'Personal Project',
-    role: '3D Artist',
-    shortDescription: 'Cinematic 3D cyberpunk cityscape render',
-    fullDescription:
-      'A cinematic 3D environment piece depicting a rain-soaked cyberpunk city at night, created in Blender. The project focused on atmospheric lighting, volumetric fog, and neon reflections on wet surfaces.',
-    challenge:
-      'Achieving a believable sense of atmosphere, scale, and light in a wholly digital environment with limited render time.',
-    solution:
-      'Used Cycles rendering with carefully placed emission planes and volumetric scattering to simulate wet-street neon reflections, with a filmic color grade in post.',
-    coverImage: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=85',
-    images: [
-      'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=85',
-    ],
-    tags: ['Blender', 'Rendering', 'Environment Design', 'Cyberpunk'],
-    featured: false,
-    color: '#0A0A2E',
-  },
-  {
-    id: '9',
-    slug: 'product-3d-visualization',
-    title: 'Product 3D Visualization',
-    category: '3D',
-    year: '2024',
-    client: 'Luxe Brand',
-    role: '3D Product Visualizer',
-    shortDescription: '3D product renders for a luxury lifestyle brand',
-    fullDescription:
-      "High-fidelity 3D product visualization for Luxe Brand's new fragrance line. Created photorealistic bottle renders in Blender for use across web, social media, and print.",
-    challenge:
-      'Matching real-world material qualities (glass refraction, gold metal, frosted caps) in a 3D render that could substitute for expensive studio photography.',
-    solution:
-      'Used physically-based material shaders with HDRI lighting and custom environment setups to achieve photorealistic results, iterating closely with the client on material specs.',
-    coverImage: 'https://images.unsplash.com/photo-1541643600914-78b084683702?w=800&q=85',
-    images: [
-      'https://images.unsplash.com/photo-1541643600914-78b084683702?w=1200&q=85',
-    ],
-    tags: ['Blender', 'Product Render', '3D Visualization', 'Luxury'],
-    featured: false,
-    color: '#2C1810',
+    color: '#1D3557',
+    instagramUrl: 'https://www.instagram.com/reel/DWGmIMHkRnj/',
   },
 ]
 
 export const projectCategories: ProjectCategory[] = [
   'Social Media',
   'UI/UX',
-  '3D',
+  'Video',
 ]

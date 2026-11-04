@@ -16,27 +16,21 @@ const fadeUpVariants = {
 const contactItems = [
   {
     label: 'Phone',
-    value: '+62 812 3456 7890',
-    href: 'tel:+6281234567890',
+    value: '+62 822 5648 8473',
+    href: 'tel:+62822 5648 8473',
     Icon: Phone,
   },
   {
     label: 'Email',
-    value: 'rusli@rusli.design',
-    href: 'mailto:rusli@rusli.design',
+    value: 'ruslimuhammad217@gmail.com',
+    href: 'mailto:ruslimuhammad217@gmail.com',
     Icon: Mail,
   },
-  {
-    label: 'LinkedIn',
-    value: 'linkedin.com/in/rusli',
-    href: 'https://linkedin.com/in/rusli',
-    Icon: Linkedin,
-    external: true,
-  },
+
   {
     label: 'Instagram',
     value: '@rusli',
-    href: 'https://instagram.com/rusli',
+    href: 'https://www.instagram.com/rusllii_/',
     Icon: Instagram,
     external: true,
   },

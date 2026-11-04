@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { projects, projectCategories } from '@/data/projects'
 import type { ProjectCategory } from '@/data/projects'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Play } from 'lucide-react'
 
 const fadeUpVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -184,6 +184,14 @@ export default function Portfolio() {
                         >
                           {project.category}
                         </span>
+                        {project.instagramUrl && (
+                          <span
+                            className="font-inter text-xs font-semibold uppercase tracking-widest px-2 py-1 flex items-center gap-1"
+                            style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)', color: 'white', backdropFilter: 'blur(4px)' }}
+                          >
+                            <Play size={10} fill="currentColor" /> Reel
+                          </span>
+                        )}
                         <span className="font-inter text-xs text-white/60">
                           {project.year}
                         </span>

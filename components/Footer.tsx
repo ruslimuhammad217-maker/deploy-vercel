@@ -1,11 +1,9 @@
 'use client'
 
-import { Instagram, Linkedin, Github, ArrowUpRight } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 
 const socialLinks = [
-  { label: 'Instagram', href: 'https://instagram.com/rusli', Icon: Instagram },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/rusli', Icon: Linkedin },
-  { label: 'GitHub', href: 'https://github.com/ruslimuhammad217-maker', Icon: Github },
+  { label: 'Instagram', href: 'https://www.instagram.com/rusllii_/', Icon: Instagram },
 ]
 
 export default function Footer() {
@@ -81,18 +79,7 @@ export default function Footer() {
                   <Icon size={15} strokeWidth={1.5} />
                 </a>
               ))}
-              <a
-                href="mailto:rusli@rusli.design"
-                className="flex items-center gap-2 font-inter text-xs font-semibold uppercase tracking-widest px-4 py-2 transition-all duration-300"
-                style={{
-                  backgroundColor: 'var(--background)',
-                  color: 'var(--foreground)',
-                }}
-                aria-label="Email Muhammad Rusli"
-              >
-                <span>Email Me</span>
-                <ArrowUpRight size={12} />
-              </a>
+
             </div>
           </div>
         </div>
