@@ -90,7 +90,9 @@ export default function Navbar() {
                 })}
                 <a
                   href="/resume/rusli-resume.pdf"
-                  download
+                  download="Muhammad-Rusli-Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-primary text-xs py-2.5 px-5"
                   aria-label="Download Resume PDF"
                 >
@@ -154,7 +156,9 @@ export default function Navbar() {
               >
                 <a
                   href="/resume/rusli-resume.pdf"
-                  download
+                  download="Muhammad-Rusli-Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 font-inter text-sm font-semibold uppercase tracking-widest text-accent border border-accent px-6 py-3"
                 >
                   Download Resume

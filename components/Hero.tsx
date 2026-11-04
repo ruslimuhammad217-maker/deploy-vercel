@@ -142,7 +142,9 @@ export default function Hero() {
                 <motion.div variants={itemVariants} className="flex flex-col gap-3">
                   <a
                     href="/resume/rusli-resume.pdf"
-                    download
+                    download="Muhammad-Rusli-Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-primary"
                     aria-label="Download Resume PDF"
                   >
