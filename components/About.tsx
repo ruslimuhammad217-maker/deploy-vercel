@@ -93,7 +93,7 @@ export default function About() {
               </p>
               <p className="font-body text-base leading-relaxed" style={{ color: 'var(--muted)' }}>
                 Dengan latar belakang Teknik Informatika dan pengalaman nyata dalam
-                brand design, UI/UX, motion graphics, dan 3D art — saya membawa
+                social media design, UI/UX, motion graphics, video editing, dan 3D art — saya membawa
                 perspektif yang unik di persimpangan antara teknologi dan seni.
               </p>
             </motion.div>
@@ -180,8 +180,7 @@ export default function About() {
                 <span className="text-label">Tools & Technologies</span>
               </div>
               <p className="font-body text-sm leading-relaxed max-w-md" style={{ color: 'var(--muted)' }}>
-                Hover on each tool to explore. My creative toolkit spans from
-                traditional design software to motion, 3D, and development tools.
+
               </p>
             </motion.div>
 

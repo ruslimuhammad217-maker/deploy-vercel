@@ -9,9 +9,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Arya Pratama — Graphic Designer',
+  title: 'Muhammad Rusli — Graphic Designer',
   description:
-    'Portfolio of Arya Pratama, a Graphic Designer based in Indonesia specializing in visual identity, UI/UX, social media design, and digital content creation.',
+    'Portfolio of Muhammad Rusli, a Graphic Designer based in Indonesia specializing in visual identity, UI/UX, social media design, and digital content creation.',
   keywords: [
     'Graphic Designer',
     'Portfolio',
@@ -23,22 +23,22 @@ export const metadata: Metadata = {
     'Brand Design',
     'Digital Content',
   ],
-  authors: [{ name: 'Arya Pratama' }],
-  creator: 'Arya Pratama',
+  authors: [{ name: 'Muhammad Rusli' }],
+  creator: 'Muhammad Rusli',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://aryapratama.design',
-    title: 'Arya Pratama — Graphic Designer',
+    url: 'https://rusli.design',
+    title: 'Muhammad Rusli — Graphic Designer',
     description:
-      'Portfolio of Arya Pratama, a Graphic Designer based in Indonesia specializing in visual identity, UI/UX, social media design, and digital content creation.',
-    siteName: 'Arya Pratama Portfolio',
+      'Portfolio of Muhammad Rusli, a Graphic Designer based in Indonesia specializing in visual identity, UI/UX, social media design, and digital content creation.',
+    siteName: 'Muhammad Rusli Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Arya Pratama — Graphic Designer',
+    title: 'Muhammad Rusli — Graphic Designer',
     description:
-      'Portfolio of Arya Pratama, a Graphic Designer based in Indonesia.',
+      'Portfolio of Muhammad Rusli, a Graphic Designer based in Indonesia.',
   },
   robots: {
     index: true,

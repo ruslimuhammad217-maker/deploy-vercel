@@ -1,4 +1,4 @@
-# ARYA PRATAMA — Graphic Designer Portfolio
+# MUHAMMAD RUSLI — Graphic Designer Portfolio
 
 A premium editorial-style portfolio website built with **Next.js 15**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
@@ -82,7 +82,7 @@ In `app/globals.css`, find and update:
 ### Add Your Resume
 Place your resume PDF in:
 ```
-public/resume/arya-pratama-resume.pdf
+public/resume/rusli-resume.pdf
 ```
 
 ### Add Your Profile Photo

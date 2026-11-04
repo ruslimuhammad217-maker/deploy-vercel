@@ -3,9 +3,9 @@
 import { Instagram, Linkedin, Github, ArrowUpRight } from 'lucide-react'
 
 const socialLinks = [
-  { label: 'Instagram', href: 'https://instagram.com/arya.pratama_', Icon: Instagram },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/aryapratama', Icon: Linkedin },
-  { label: 'GitHub', href: 'https://github.com/aryapratama', Icon: Github },
+  { label: 'Instagram', href: 'https://instagram.com/rusli', Icon: Instagram },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/rusli', Icon: Linkedin },
+  { label: 'GitHub', href: 'https://github.com/ruslimuhammad217-maker', Icon: Github },
 ]
 
 export default function Footer() {
@@ -45,7 +45,7 @@ export default function Footer() {
                 className="font-display font-bold text-xl uppercase tracking-tight mb-1"
                 style={{ color: 'var(--background)' }}
               >
-                ARYA PRATAMA
+                MUHAMMAD RUSLI
               </p>
               <p
                 className="font-inter text-xs tracking-widest uppercase"
@@ -60,7 +60,7 @@ export default function Footer() {
               className="font-inter text-xs"
               style={{ color: 'rgba(245,240,235,0.5)' }}
             >
-              © {currentYear} Arya Pratama. All rights reserved.
+              © {currentYear} Muhammad Rusli. All rights reserved.
             </p>
 
             {/* Right — Social */}
@@ -82,13 +82,13 @@ export default function Footer() {
                 </a>
               ))}
               <a
-                href="mailto:arya@aryapratama.design"
+                href="mailto:rusli@rusli.design"
                 className="flex items-center gap-2 font-inter text-xs font-semibold uppercase tracking-widest px-4 py-2 transition-all duration-300"
                 style={{
                   backgroundColor: 'var(--background)',
                   color: 'var(--foreground)',
                 }}
-                aria-label="Email Arya Pratama"
+                aria-label="Email Muhammad Rusli"
               >
                 <span>Email Me</span>
                 <ArrowUpRight size={12} />

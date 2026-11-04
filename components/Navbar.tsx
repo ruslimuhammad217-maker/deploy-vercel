@@ -69,7 +69,7 @@ export default function Navbar() {
                 className="font-display font-bold text-sm tracking-widest uppercase text-foreground no-underline hover:text-accent transition-colors duration-300"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
-                ARYA<span style={{ color: 'var(--accent)' }}>.</span>
+                RUSLI<span style={{ color: 'var(--accent)' }}>.</span>
               </Link>
 
               {/* Desktop Nav */}
@@ -89,7 +89,7 @@ export default function Navbar() {
                   )
                 })}
                 <a
-                  href="/resume/arya-pratama-resume.pdf"
+                  href="/resume/rusli-resume.pdf"
                   download
                   className="btn-primary text-xs py-2.5 px-5"
                   aria-label="Download Resume PDF"
@@ -153,7 +153,7 @@ export default function Navbar() {
                 className="mt-8"
               >
                 <a
-                  href="/resume/arya-pratama-resume.pdf"
+                  href="/resume/rusli-resume.pdf"
                   download
                   className="inline-flex items-center gap-2 font-inter text-sm font-semibold uppercase tracking-widest text-accent border border-accent px-6 py-3"
                 >

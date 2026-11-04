@@ -82,7 +82,11 @@ export default function Hero() {
             {/* Hero Name */}
             <div className="flex-1 flex flex-col justify-center">
               <motion.h1
-                className="text-hero leading-none"
+                className="font-display font-bold uppercase leading-none"
+                style={{
+                  fontSize: 'clamp(2rem, 7vw, 8.5rem)',
+                  letterSpacing: '-0.04em',
+                }}
                 variants={itemVariants}
               >
                 MUHAMMAD
@@ -122,8 +126,8 @@ export default function Hero() {
                 <motion.div variants={itemVariants}>
                   <p className="font-body text-base leading-relaxed" style={{ color: 'var(--muted)' }}>
                     Saya seorang Graphic Designer yang berfokus pada{' '}
-                    <em>visual identity</em>, social media design, UI/UX,
-                    digital content, dan visual communication.
+                    <em>Social Media Design</em>, UI/UX,
+                    digital content, video editing, motion graphics, dan visual communication.
                   </p>
                   <div className="flex items-center gap-3 mt-4">
                     <div
@@ -137,7 +141,7 @@ export default function Hero() {
                 {/* CTAs */}
                 <motion.div variants={itemVariants} className="flex flex-col gap-3">
                   <a
-                    href="/resume/arya-pratama-resume.pdf"
+                    href="/resume/rusli-resume.pdf"
                     download
                     className="btn-primary"
                     aria-label="Download Resume PDF"
@@ -159,7 +163,7 @@ export default function Hero() {
                   {/* Social Links */}
                   <div className="flex items-center gap-4 mt-2">
                     <a
-                      href="https://instagram.com/aryapratama"
+                      href="https://www.instagram.com/rusllii_/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 border transition-all duration-300 hover:bg-foreground hover:text-background"
@@ -168,26 +172,7 @@ export default function Hero() {
                     >
                       <Instagram size={16} strokeWidth={1.5} />
                     </a>
-                    <a
-                      href="https://linkedin.com/in/aryapratama"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 border transition-all duration-300 hover:bg-foreground hover:text-background"
-                      style={{ borderColor: 'var(--border)' }}
-                      aria-label="LinkedIn"
-                    >
-                      <Linkedin size={16} strokeWidth={1.5} />
-                    </a>
-                    <a
-                      href="https://github.com/aryapratama"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 border transition-all duration-300 hover:bg-foreground hover:text-background"
-                      style={{ borderColor: 'var(--border)' }}
-                      aria-label="GitHub"
-                    >
-                      <Github size={16} strokeWidth={1.5} />
-                    </a>
+
                   </div>
                 </motion.div>
               </div>
@@ -195,7 +180,7 @@ export default function Hero() {
           </div>
 
           {/* RIGHT COLUMN — Profile Image */}
-          <div className="lg:col-span-4 relative">
+          <div className="lg:col-span-4 relative lg:pl-8">
             <motion.div
               className="relative h-full min-h-[400px] lg:min-h-0"
               variants={imageVariants}
@@ -218,18 +203,17 @@ export default function Hero() {
                 className="relative z-10 h-full overflow-hidden"
                 style={{
                   top: 0,
-                  right: '0.75rem',
+                  right: 0,
                   bottom: '0.75rem',
                 }}
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=85"
-                  alt="Arya Pratama — Graphic Designer"
+                  src="/images/baru.jpg"
+                  alt="Muhammad Rusli — Graphic Designer"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover object-center"
                   priority
-                  style={{ filter: 'contrast(1.05) saturate(0.9)' }}
                 />
 
                 {/* Overlay with text */}
@@ -242,7 +226,7 @@ export default function Hero() {
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="font-display text-white text-xs font-bold uppercase tracking-widest">
-                        ARYA PRATAMA
+                        MUHAMMAD RUSLI
                       </p>
                       <p className="font-inter text-white/60 text-xs tracking-wider">
                         Graphic Designer
@@ -252,7 +236,7 @@ export default function Hero() {
                       className="w-8 h-8 rounded-full flex items-center justify-center"
                       style={{ backgroundColor: 'var(--accent)' }}
                     >
-                      <span className="font-display text-white text-xs font-bold">AP</span>
+                      <span className="font-display text-white text-xs font-bold">MR</span>
                     </div>
                   </div>
                 </div>

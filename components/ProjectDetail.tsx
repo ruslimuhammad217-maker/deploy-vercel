@@ -196,51 +196,25 @@ export default function ProjectDetail({ project, otherProjects }: ProjectDetailP
                   {project.fullDescription}
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-                  <div>
-                    <h3
-                      className="font-display font-bold text-sm uppercase tracking-widest mb-3"
-                      style={{ color: 'var(--accent)' }}
-                    >
-                      The Challenge
-                    </h3>
-                    <p className="font-body text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-                      {project.challenge}
-                    </p>
-                  </div>
-                  <div>
-                    <h3
-                      className="font-display font-bold text-sm uppercase tracking-widest mb-3"
-                      style={{ color: 'var(--accent)' }}
-                    >
-                      The Solution
-                    </h3>
-                    <p className="font-body text-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
-                      {project.solution}
-                    </p>
-                  </div>
-                </div>
               </motion.div>
             </div>
 
             {/* Images Gallery */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-6">
               {project.images.map((img, index) => (
                 <motion.div
                   key={index}
-                  className="relative overflow-hidden w-full"
-                  style={{ aspectRatio: index === 0 ? '16/9' : '3/1' }}
+                  className="relative w-full overflow-hidden"
                   initial={{ clipPath: 'inset(100% 0 0 0)' }}
                   whileInView={{ clipPath: 'inset(0% 0 0 0)' }}
                   viewport={{ once: true, margin: '-80px' }}
                   transition={{ duration: 1, ease: [0.76, 0, 0.24, 1], delay: index * 0.1 }}
                 >
-                  <Image
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={img}
                     alt={`${project.title} — Image ${index + 1}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 80vw"
-                    className="object-cover"
+                    className="w-full h-auto block"
                     style={{ filter: 'contrast(1.05)' }}
                   />
                 </motion.div>

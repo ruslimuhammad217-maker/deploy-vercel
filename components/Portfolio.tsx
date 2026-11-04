@@ -43,10 +43,9 @@ const aspectRatios = [
 export default function Portfolio() {
   const sectionRef = useRef<HTMLElement>(null)
   const isInView = useInView(sectionRef, { once: true, margin: '-80px' })
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('All')
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('Social Media')
 
   const filteredProjects = useMemo(() => {
-    if (activeCategory === 'All') return projects
     return projects.filter((p) => p.category === activeCategory)
   }, [activeCategory])
 

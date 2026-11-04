@@ -22,21 +22,21 @@ const contactItems = [
   },
   {
     label: 'Email',
-    value: 'arya@aryapratama.design',
-    href: 'mailto:arya@aryapratama.design',
+    value: 'rusli@rusli.design',
+    href: 'mailto:rusli@rusli.design',
     Icon: Mail,
   },
   {
     label: 'LinkedIn',
-    value: 'linkedin.com/in/aryapratama',
-    href: 'https://linkedin.com/in/aryapratama',
+    value: 'linkedin.com/in/rusli',
+    href: 'https://linkedin.com/in/rusli',
     Icon: Linkedin,
     external: true,
   },
   {
     label: 'Instagram',
-    value: '@arya.pratama_',
-    href: 'https://instagram.com/arya.pratama_',
+    value: '@rusli',
+    href: 'https://instagram.com/rusli',
     Icon: Instagram,
     external: true,
   },
@@ -147,7 +147,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="mailto:arya@aryapratama.design"
+              href="mailto:rusli@rusli.design"
               className="btn-primary inline-flex"
               aria-label="Send email to start a project"
             >
